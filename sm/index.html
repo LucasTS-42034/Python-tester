@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester de código</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Teste seu Código Python</h1>
+    <form id="codeForm">
+        <label for="sourceCode">Código Python:</label>
+        <textarea id="sourceCode" name="sourceCode" rows="10" cols="50" placeholder="Digite seu código Python aqui..."></textarea>
+        
+        <div id="testCases">
+            <h3>Casos de Teste</h3>
+            <div class="test-case">
+                <label>Entrada (stdin):</label>
+                <input type="text" class="stdin" placeholder="Ex: 10 15">
+                <label>Saída Esperada:</label>
+                <input type="text" class="expected" placeholder="Ex: 25">
+            </div>
+        </div>
+        <button type="button" id="addTestCase">Adicionar Caso de Teste</button>
+        <button type="submit">Submeter</button>
+    </form>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
